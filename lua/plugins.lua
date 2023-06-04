@@ -61,6 +61,12 @@ return require('packer').startup(function(use)
 		  'nvim-lua/plenary.nvim'
 	  }
   }
+  use {
+        'romgrk/barbar.nvim',
+        requires = {
+            'lewis6991/gitsigns.nvim',
+        }
+  }
   if packer_bootstrap then
     require('packer').sync()
   end
