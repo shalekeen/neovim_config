@@ -12,6 +12,5 @@ filters = {
 },
 })
 
-vim.keymap.set('n', '<c-o>', ':NvimTreeFindFileToggle<CR>')
-vim.keymap.set('n', '<c-i>', ':NvimTreeFocus<CR>')
-vim.keymap.set('n', '<c-r>', ':NvimTreeRefresh<CR>')
+vim.keymap.set('n', '<C-o>', ':NvimTreeFindFileToggle<CR>')
+vim.keymap.set('n', '<C-r>', ':NvimTreeRefresh<CR>')
