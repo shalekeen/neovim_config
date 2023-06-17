@@ -1,4 +1,4 @@
-vim.g.mapleader = ' '
+vim.g.mapleader = '<Space>'
 vim.g.maplocalleader= ' '
 vim.opt.backspace = '2'
 vim.opt.showcmd = true
@@ -25,6 +25,6 @@ vim.opt.breakindent = true
 
 vim.wo.colorcolumn = '80'
 
-vim.keymap.set({'n', 'x'}, 'cp', '"+y')
-vim.keymap.set({'n', 'x'}, 'cv', '"+p')
+vim.keymap.set({'n', 'x'}, 'C-p', '"+y')
+vim.keymap.set({'n', 'x'}, 'C-v', '"+p')
 vim.keymap.set({'n', 'x'}, 'x', '"_x')

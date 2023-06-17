@@ -107,14 +107,14 @@ for type, icon in pairs(signs) do
 end
 
 vim.diagnostic.config({
-  virtual_text = {
-    -- source = "always",  -- Or "if_many"
-    prefix = '●', -- Could be '■', '▎', 'x'
-  },
+  virtual_text = false,
   severity_sort = true,
   float = {
     source = "always",  -- Or "if_many"
   },
 })
 
+vim.api.nvim_set_keymap('n', '<C-d>', ':lua vim.diagnostic.open_float()<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>n', ':lua vim.diagnostic.goto_next()<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>p', ':lua vim.diagnostic.goto_prev()<CR>', {noremap = true, silent = true})
 
