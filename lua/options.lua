@@ -1,5 +1,6 @@
 vim.g.mapleader = '<Space>'
 vim.g.maplocalleader= ' '
+
 vim.opt.backspace = '2'
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
@@ -7,10 +8,11 @@ vim.opt.autowrite = true
 vim.opt.cursorline = true
 vim.opt.autoread = true
 vim.opt.autochdir = true
+vim.opt.background = 'dark'
 
-vim.opt.tabstop = 4
+vim.opt.tabstop = 2
 vim.opt.expandtab = true
-vim.opt.shiftwidth = 4
+vim.opt.shiftwidth = 2
 vim.opt.shiftround = true
 vim.opt.expandtab = true
 vim.opt.completeopt = "menuone,noselect"

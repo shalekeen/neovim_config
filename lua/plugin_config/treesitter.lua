@@ -11,7 +11,7 @@ require('nvim-treesitter.configs').setup({
     ensure_installed = {"jsdoc", "css", "javascript", "kotlin", "latex",
     			"lua", "make", "markdown", "markdown_inline", 
 			"java", "svelte", "typescript", "rust", "sql", 
-			"cpp", "c", "cmake", "vim"},
+			"cpp", "c", "cmake", "vim", "python"},
     sync_install = true,
     auto_install = true,
     highlight = {
