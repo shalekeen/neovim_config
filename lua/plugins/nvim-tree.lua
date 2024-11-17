@@ -8,12 +8,10 @@ local function opts(desc)
 end
 
 local function on_attach(buff)
-    print("Attaching key maps")
     local api = require "nvim-tree.api"
     api.config.mappings.default_on_attach(buff)
     vim.keymap.set('n', '<C-o>', ":NvimTreeToggle<cr>", opts("Toggle"))
     vim.g.nvim_tree_respect_buf_cwd = 1
-    print("Loading nvim-tree")
 end
 
 return {
