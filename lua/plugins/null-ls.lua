@@ -12,6 +12,7 @@ return {
             sources = {
                 cspell.code_actions,
                 null_ls.builtins.code_actions.eslint,
+                null_ls.builtins.formatting.black,
                 null_ls.builtins.formatting.rustfmt,
                 null_ls.builtins.diagnostics.flake8,
                 null_ls.builtins.formatting.clang_format,
