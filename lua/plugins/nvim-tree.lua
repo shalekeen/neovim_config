@@ -1,12 +1,3 @@
-local function opts(desc)
-    return {
-        desc = "nvim-tree: " .. desc,
-        noremap = true,
-        silent = true,
-        nowait = true
-    }
-end
-
 return {
     url = "https://github.com/nvim-tree/nvim-tree.lua",
     dependencies = {
