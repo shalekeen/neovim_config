@@ -17,6 +17,7 @@ return {
             "marksman",
             "pyright",
             "rust-analyzer", --rust_analyzer
+            "clang-format"
         },
         automatic_installation = true,
     },
