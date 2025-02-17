@@ -24,8 +24,8 @@ vim.api.nvim_set_keymap('n', '<A-7>', ':BufferGoto 7<CR>', opts("Go to tab 7"))
 vim.api.nvim_set_keymap('n', '<A-8>', ':BufferGoto 8<CR>', opts("Go to tab 8"))
 vim.api.nvim_set_keymap('n', '<A-9>', ':BufferGoto 9<CR>', opts("Go to tab 9"))
 
-vim.api.nvim_set_keymap('n', '<Leader>h', ':BufferPrevious<CR>', opts("Go to previous tab"))
-vim.api.nvim_set_keymap('n', '<Leader>l', ':BufferNext<CR>', opts("Go to next tab"))
+vim.api.nvim_set_keymap('n', '<C-h>', ':BufferPrevious<CR>', opts("Go to previous tab"))
+vim.api.nvim_set_keymap('n', '<C-l>', ':BufferNext<CR>', opts("Go to next tab"))
 
 vim.api.nvim_set_keymap('n', '<A-h>', ':BufferMovePrevious<CR>', opts("Move tab to the left"))
 vim.api.nvim_set_keymap('n', '<A-l>', ':BufferMoveNext<CR>', opts("Move tab to the right"))
