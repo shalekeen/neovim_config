@@ -1,5 +1,5 @@
 return {
-    url = "https://github.com/jose-elias-alvarez/null-ls.nvim",
+    url = "https://github.com/nvimtools/none-ls.nvim",
     dependencies = {
         "https://github.com/nvim-lua/plenary.nvim",
         "https://github.com/davidmh/cspell.nvim"
@@ -11,13 +11,14 @@ return {
             autostart = true,
             sources = {
                 cspell.code_actions,
-                null_ls.builtins.code_actions.eslint,
-                null_ls.builtins.formatting.black,
-                null_ls.builtins.formatting.rustfmt,
-                null_ls.builtins.diagnostics.flake8,
+                null_ls.builtins.formatting.prettierd,
+                null_ls.builtins.diagnostics.pylint,
                 null_ls.builtins.formatting.clang_format,
                 null_ls.builtins.formatting.google_java_format,
-                null_ls.builtins.diagnostics.luacheck,
+                null_ls.builtins.diagnostics.checkmake,
+                null_ls.builtins.diagnostics.codespell,
+                null_ls.builtins.diagnostics.commitlint,
+                null_ls.builtins.formatting.shfmt
             },
             on_attach = function(_, bufnr)
                 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
