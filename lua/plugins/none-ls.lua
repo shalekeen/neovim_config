@@ -6,11 +6,10 @@ return {
     },
     config = function()
         local null_ls = require('null-ls')
-        local cspell = require('cspell')
         null_ls.setup({
             autostart = true,
             sources = {
-                cspell.code_actions,
+                null_ls.builtins.diagnostics.codespell,
                 null_ls.builtins.formatting.prettierd,
                 null_ls.builtins.diagnostics.pylint,
                 null_ls.builtins.formatting.clang_format,
